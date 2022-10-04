@@ -1,0 +1,111 @@
+.header{
+    width: 100%;
+    background: $light-color;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000;
+    transition: transform .2s linear;
+    &__hide{
+        transform: translateY(-80px);
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul{
+        list-style: none;
+    }
+    &__logo{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-img{
+            max-width: 75px;
+        }
+    }   
+    &__nav{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        margin-left: 5%;
+
+        &__list{
+            flex: 0 1 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__item{
+            padding:0 12px;
+            line-height: 4;
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 16px;
+                color: $usual-color;
+            }
+            &__dropdown{
+                overflow: hidden;
+                line-height: 4.5;
+                &__dropbtn {
+                    padding:0 16px;
+                    border: none;
+                    outline: none;
+                    background-color: inherit;
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: $usual-color;
+                    margin: 0; /* Important for vertical align on mobile phones */
+                }
+                &__dropdown-content {
+                    display: none;
+                    position: absolute;
+                    top: 73px;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 10000;
+                    border: none;
+                    border-top-width: 2px;
+                    border-right-width: 0px;
+                    border-left-width: 0px;
+                    border-bottom-width: 0px;
+                    border-style: solid;
+                    border-color: #21a549;
+                  a{
+                    float: none;
+                    color: black;
+                    line-height:normal;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                    &:hover {
+                        background-color: #ddd;
+                      }
+                  }
+                }
+                &:hover{
+                    .header__nav__item__dropdown__dropdown-content{
+                    display: block;
+                  }
+                }
+            }
+        }
+    }
+    #basket{
+        max-width: 45px;
+    }
+    &__language{
+        flex: 0 1 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &-img{
+            padding-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.btn{
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+   span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   &:hover{
+    .svg-wrapper {
+        animation: fly-1 0.6s ease-in-out infinite alternate;
+       }
+    svg {
+        transform: translateX(2.5em) scale(1.1);
+       }
+       span {
+        transform: translateX(6em);
+       }
+   } 
+   
+   &:active {
+    transform: scale(0.95);
+   }
+
+   &-clear{
+    margin-left: 10px;
+    background: #b3b7c3;
+    color: #000; 
+    cursor: pointer;
+   }
+   &-send{
+    &:hover
+        {
+            svg {
+                transform: translateX(2.5em) rotate(45deg) scale(1.1);
+            }
+        } 
+   }
+   &-shop{
+    cursor: pointer;
+    background: $main-color;
+    color: #fff;
+    text-shadow: $usual-color 1px 1px 0, $usual-color -1px -1px 0, 
+    $usual-color -1px 1px 0, $usual-color 1px -1px 0;
+    height: 100%;
+    font-size: 16px;
+    padding: 1.05em 0.5em;
+    border: 1px solid black;
+    border-radius: 3px;
+    &:disabled{
+        opacity: 0.4;
+        pointer-events: none;
+    }
+   }
+   &-order{
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0.7em 0.1em;
+    border-radius: 3%;
+    &:hover{
+        .svg-wrapper {
+            animation: fly-1 0.6s ease-in-out infinite alternate;
+           }
+        svg {
+            transform: translateX(6em) rotate(45deg) scale(1.1);
+           }
+           span {
+            transform: translateX(12em);
+           }
+       } 
+   }
+   &-continue{
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0.7em 0.1em;
+    width: 100%;
+    border-radius: 3%;
+    background: $main-color;
+
+    &:hover{
+        .svg-wrapper {
+            animation: fly-1 0.6s ease-in-out infinite alternate;
+           }
+        svg {
+            transform: translateX(6em) scale(1.1);
+           }
+           span {
+            transform: translateX(12em);
+           }
+       } 
+   }
+}
+
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+   
+   

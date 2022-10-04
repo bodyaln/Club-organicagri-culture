@@ -1,0 +1,64 @@
+.about{
+    &__slider{
+        position: relative;
+        &-prev{
+            position: absolute;
+            top: transform(translateY(-50%));
+            bottom: 50%;
+            left:15%;
+            cursor: pointer;
+        }
+        &-next{
+            position: absolute;
+            top: transform(translateY(-50%));
+            bottom: 50%;
+            right: 15%;
+            cursor: pointer;
+        }
+    }
+    &__slide{
+        height: 400px;  
+        .container{
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__tasks{   
+            background: rgb(222,236,223);
+            background: linear-gradient(90deg, rgba(222,236,223,1) 0%, rgba(143,162,113,1) 100%);
+        }
+        &__assignment{
+            background: rgb(127,135,208);
+            background: linear-gradient(90deg, rgba(127,135,208,1) 0%, rgba(223,227,236,1) 100%);
+        }
+        &__activity{
+            background: rgb(225,183,150);
+            background: linear-gradient(90deg, rgba(225,183,150,1) 18%, rgba(169,132,103,1) 100%);
+        }
+        &__descr{   
+            padding: 0 20px;
+            text-align: center;
+            color: #000;
+            p{
+                font-size: 20px;
+            }
+            h3{
+                font-weight: 500;
+                font-size: 24px;
+                font-style: italic;
+            }
+        }
+        &__list{
+            margin-left: 20px;
+            &__item{
+                text-align: left;
+                font-size: 20px;
+            }
+        }
+        img{
+            max-height: 300px;
+            align-self: center;
+            border-radius: 3%;
+        }
+    }
+}

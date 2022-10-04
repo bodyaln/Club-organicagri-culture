@@ -1,0 +1,31 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+    padding-top: 80px;
+}
+@import 'blocks/header';
+@import 'blocks/title';
+@import 'blocks/technology';
+@import 'blocks/footer';
+@import 'blocks/grass';
+@import 'blocks/promo';
+@import 'blocks/about';
+@import 'blocks/contacts';
+@import 'blocks/button';
+@import 'blocks/modal';
+@import 'blocks/shop';
+@import 'blocks/cart';

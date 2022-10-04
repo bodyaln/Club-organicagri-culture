@@ -1,0 +1,105 @@
+.technology{
+    background:#f5f5f6;
+    .container{
+        display: flex;
+    }
+    aside{
+        background: $easy-color;
+        flex: 0 0 300px;
+        padding: -20px 10px 0 10px;
+        .advertising{
+            margin-top: 40px;
+            &__details{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            &__img{
+                display: block;
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 250px;
+                height: 100%;
+                border-radius: 5px;
+                transition: 124ms linear;
+                &:hover{
+                    opacity: .9;
+                    transform: scale(1.05);
+                }
+            }
+            &__term{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            &__title{
+                margin-top: 10px;
+                text-align: center;
+                font-weight: 300;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    article{
+        background: $medium-color;
+        padding: 15px;
+        h1{
+            font-size: 48px;
+            text-align: center;
+            color: #fff;
+            text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
+            #000 -1px 1px 0, #000 1px -1px 0;
+        }
+        h2{
+            font-size: 30px;
+            text-align: center;
+        }
+        h3{
+            font-size: 28px;
+            text-align: center;
+        }
+        img{
+            display: block;
+            max-width: 900px;
+            margin: 0 auto;
+            transition: 124ms linear;
+            &:hover{
+                opacity: .9;
+                transform: scale(1.05);
+            }
+        }
+        p{
+            line-height: 1.5;           
+            text-align: justify;
+        }   
+
+        ul{
+            li{
+                margin-left: 15px;
+            }
+        }
+        .yellow{
+            color: rgb(221, 245, 6);
+        }
+        .tg{
+            margin: 0 auto;
+            border-collapse:collapse;
+            border-spacing:0;
+            td{border-color:black;
+                border-style:solid;        
+                border-width:1px;
+                padding:10px 5px;
+                text-align: center;
+              }
+            th{
+                background-color:rgb(221, 245, 6);border-color:inherit;font-size:16px;text-align:center;vertical-align:top;
+                border-color:black;
+                border-style:solid;
+                border-width:1px;
+                padding:10px 5px;
+            }
+        } 
+
+    }
+}
