@@ -51,6 +51,10 @@
                 transform: translateX(2.5em) rotate(45deg) scale(1.1);
             }
         } 
+        &:disabled{
+            opacity: 0.4;
+            pointer-events: none;
+        }
    }
    &-shop{
     cursor: pointer;

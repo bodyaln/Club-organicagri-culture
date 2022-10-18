@@ -6,10 +6,16 @@
     left: 0;
     z-index: 1000;
     transition: transform .2s linear;
+    .phone-logo{
+        display: none;
+    }
+    &__close{
+        display: none;
+    }
     &__hide{
         transform: translateY(-80px);
-    }
-    .container{
+    }   
+    &__wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -18,22 +24,25 @@
         list-style: none;
     }
     &__logo{
-        width: 200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         &-img{
-            max-width: 75px;
+            max-width: 55px;
+        }
+        &-title{margin-left: 5px;
+            line-height: 20px;
+            font-size: 18px;
+            font-weight: 300;
         }
     }   
     &__nav{
         overflow: hidden;
-        display: flex;
-        align-items: center;
         margin-left: 5%;
-
+        &__another{
+            display: none;
+        }
         &__list{
-            flex: 0 1 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -41,17 +50,19 @@
         &__item{
             padding:0 12px;
             line-height: 4;
+            font-size: 16px;
+            &__language{
+                display: none;
+            }
             a{
                 text-decoration: none;
                 font-weight: bold;
-                font-size: 16px;
                 color: $usual-color;
             }
             &__dropdown{
-                overflow: hidden;
                 line-height: 4.5;
                 &__dropbtn {
-                    padding:0 16px;
+                    padding:0 12px;
                     border: none;
                     outline: none;
                     background-color: inherit;
@@ -65,7 +76,6 @@
                     position: absolute;
                     top: 73px;
                     background-color: #f9f9f9;
-                    min-width: 160px;
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                     z-index: 10000;
                     border: none;
@@ -75,6 +85,9 @@
                     border-bottom-width: 0px;
                     border-style: solid;
                     border-color: #21a549;
+                    li{
+                        max-width: 320px;
+                    }
                   a{
                     float: none;
                     color: black;
@@ -98,6 +111,9 @@
     }
     #basket{
         max-width: 45px;
+        &:hover{
+            cursor: pointer;
+        }
     }
     &__language{
         flex: 0 1 auto;

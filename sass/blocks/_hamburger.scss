@@ -1,0 +1,17 @@
+.hamburger{
+		display: none;
+		position: absolute;
+		left: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 26px;
+		height: 12px;
+		z-index: 1001;
+		span{
+			display: block; 
+			height: 2px;
+			width: 100%;
+			background-color: $usual-color ;
+			margin-bottom: 2px;
+			transition: 0.5s all;}
+}

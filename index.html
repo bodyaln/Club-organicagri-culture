@@ -12,7 +12,6 @@
 <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">
 <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
 <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
 <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
 <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
 <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon/android-icon-192x192.png">
@@ -23,6 +22,7 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,18 +31,25 @@
 </head>
 <body>
     <header class="header">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <img src="img/logo.png" alt="logo.png" class="phone-logo">
         <div class="container">
-            <div class="header__logo">
+            <div class="header__wrapper">
+              <div class="header__logo">  
                 <a href="/index.html"><img src="img/logo.png" alt="logohandwithtree" class="header__logo-img"></a>
-            <h2 class="title title-18 title-300">Клуб<br>
+            <h2 class="header__logo-title">Клуб<br>
                 органічного<br>
                 землеробства</h2>
             </div>
-            <nav class="header__nav">
+            <nav class="header__nav header__nav__active">
                 <ul class="header__nav__list">
-    
+
                     <li class="header__nav__item__dropdown">
-                        <button class="header__nav__item__dropdown__dropbtn">Клуб<span>&#9660;</span>
+                        <button class="header__nav__item header__nav__item__dropdown__dropbtn">Клуб<span>&#9660;</span>
                         </button>
                         <ul class="header__nav__item__dropdown__dropdown-content">
                           <li><a href="#tasks">Призначення клубу</a></li>
@@ -51,8 +58,8 @@
                           <li><a href="/technology.html" target="_blank">Технології органічного землеробства</a></li>
                         </ul>
                       </li>
-                    <li class="header__nav__item__dropdown">
-                        <button class="header__nav__item__dropdown__dropbtn">Крамниця <span>&#9660;</span>
+                     <li class="header__nav__item__dropdown">
+                        <button class="header__nav__item header__nav__item__dropdown__dropbtn">Крамниця <span>&#9660;</span>
                         </button>
                         <ul class="header__nav__item__dropdown__dropdown-content">
                           <li data-products-type="seedlings"><a href="#shop">Саджанці</a></li>
@@ -60,29 +67,47 @@
                           <li data-products-type="seed"><a href="#shop">Насіння</a></li>
                         </ul>
                       </li>
+                    
+                      <li class="header__nav__item__dropdown header__nav__another">
+                        <button class="header__nav__item header__nav__item__dropdown__dropbtn">Інше<span>&#9660;</span>
+                        </button>
+                        <ul class="header__nav__item__dropdown__dropdown-content">
+                          <li><a href="#contacts">Контакти</a></li>
+                          <li><a href="#map">Наші магазини</a></li>
+                          <li><a href="#discussing">Обговорення</a></li> 
+                        </ul>
+                      </li>
+                    <li class="header__nav__item__dropdown header__nav__item__language">
+                        <button class="header__nav__item header__nav__item__dropdown__dropbtn">Мова <span>&#9660;</span>
+                        </button>
+                        <ul class="header__nav__item__dropdown__dropdown-content">
+                          <li><a href="#"><img src="icons/Flag_of_Ukraine.png" alt="ukraine" class="header__language-img"></a></li>
+                          <li><a href="#"><img src="icons/Flag_of_Slovakia1.png" alt="slovakia" class="header__language-img"></a></li>
+                          <li><a href="#"><img src="icons/Flag_of_the_United_Kingdom.png" alt="english" class="header__language-img"></a></li>
+                        </ul>
+                      </li>
+
                     <li class="header__nav__item"><a href="#contacts">Контакти</a></li>
                     <li class="header__nav__item"><a href="#map">Наші магазини</a></li>
                     <li class="header__nav__item"><a href="#discussing">Обговорення</a></li> 
-                    <li class="header__nav__item"><a href="#">Пошук</a></li>
                 </ul>
             </nav>
-            <a href="#"><img src="icons/basket.png" alt="basket" id="basket"></a>
+            <a><img src="icons/basket.png" alt="basket" id="basket"></a>
             <div class="header__language">
                 <a href="#"><img src="icons/Flag_of_Ukraine.png" alt="ukraine" class="header__language-img"></a>
                 <a href="#"><img src="icons/Flag_of_Slovakia1.png" alt="slovakia" class="header__language-img"></a>
                 <a href="#"><img src="icons/Flag_of_the_United_Kingdom.png" alt="english" class="header__language-img"></a>
             </div>
+            <span class="header__close">&#9658;</span>
+            </div>
         </div>
     </header>
-     <section class="promo">
-        <div class="promo__video">
-            <video class="promo__video__media" src="videos/IMG_6245.MP4" autoplay muted loop></video>
-        </div>
-        <div class="promo__wrapper">
+      <section class="promo" id="up">
+        <div class="container">
             <div class="promo__title">
                 <h1 class="title title-64 title-light promo__title__text">Клуб органічного землеробства</h1>
-            </div>
-        <div class="container">
+                </div>
+                <div class="promo__wrapper">
                 <div class="promo__navigation">
                     <figure>
                       <img src="img/gifs/promo__tree.gif" 
@@ -90,8 +115,7 @@
                     class="promo__img-tree" 
                     title="Для навігації натисніть на дереві відповідні картинки" 
                     usemap="#navigation" 
-                    width="500" 
-                    height="475">
+                    >
                     <figcaption class="promo__underimg">Рис. Навігаційне дерево</figcaption>
                     </figure>
                     <map name="navigation">
@@ -139,10 +163,10 @@
             </div>
         </div>
     </section> 
-    <section class="about" id="about">
+   <section class="about" id="about">
             <div class="about__slider">
                 <div class="about__slider-wrapper">
-                    <div class="about__slider-inner">
+                    <div class="about__slider-inner" >
                         <div class="about__slide about__slide__tasks" id="tasks">
                          <div class="container">
                           <img src="img/slide/SaveWorld.png" alt="greenworld" class="about__slide-img">
@@ -173,21 +197,23 @@
                                     <li class="about__slide__list__item">по-друге, в організації та проведенні семінарів для членів Клубу;</li><br>
                                     <li class="about__slide__list__item">по-третє, у роботі консультанта в Клубі та на виставках-ярмарках;</li><br>
                                     <li class="about__slide__list__item">по-четверте, у створенні та розповсюдженні інформаційних матеріалів: загальноклубний та регіональні вісники, газета «До Землі з Любов’ю»</li><br>
-                                    <li class="about__slide__list__item">по-п’яте, у забезпеченні членів Клубу продукцією, що допомагає господарювати на землі в гармонії з Природою.</li>
                                </ul>
                              </div>
                            </div>
                         </div>
                     </div>
                 </div>
-                    <div class="about__slider-prev">
+
+                    <div class="about__slider__arrows">
+                      <div class="about__slider-prev">
                         <img src="icons/arrows/left.png" alt="prev">
                     </div>
                     <div class="about__slider-next">
                         <img src="icons/arrows/right.png" alt="next">
                     </div>
+                    </div>
             </div>
-    </section>
+    </section> 
 
 
     <section class="shop" id="shop">
@@ -1186,15 +1212,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
     <section class="contacts" id="contacts">
         <div class="container">
             <h2 class="title-usual title-32">Зв‘яжіться з нами</h2>
@@ -1403,8 +1420,11 @@
             </div>
         </div>
         <div class="cart__overlay"></div>
-    </div>
+    </div> 
+    <a href="#up" class="pageup" id="toTop">
+      <img src="icons/pageup.png" alt="up">
+  </a>
     <script src="js/simplebar.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/bundle.js"></script>
 </body>
 </html>

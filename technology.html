@@ -12,49 +12,78 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__logo">
-                <a href="/index.html"><img src="img/logo.png" alt="logohandwithtree" class="header__logo-img"></a>
-            <h2 class="title title-18 title-300">Клуб<br>
-                органічного<br>
-                землеробства</h2>
-            </div>
-            <nav class="header__nav">
-                <ul class="header__nav__list">
-    
-                    <li class="header__nav__item__dropdown">
-                        <button class="header__nav__item__dropdown__dropbtn">Клуб<span>&#9660;</span>
-                        </button>
-                        <ul class="header__nav__item__dropdown__dropdown-content">
-                          <li><a href="#tasks">Призначення клубу</a></li>
-                          <li><a href="#tasks">Завдання клубу</a></li>
-                          <li><a href="#tasks">Діяльність клубу</a></li>
-                          <li><a href="/technology.html" target="_blank">Технології органічного землеробства</a></li>
-                        </ul>
-                      </li>
-                    <li class="header__nav__item__dropdown">
-                        <button class="header__nav__item__dropdown__dropbtn">Крамниця <span>&#9660;</span>
-                        </button>
-                        <ul class="header__nav__item__dropdown__dropdown-content">
-                          <li data-products-type="seedlings"><a href="#shop">Саджанці</a></li>
-                          <li data-products-type="sprouts"><a href="#shop">Розсади</a></li>
-                          <li data-products-type="seed"><a href="#shop">Насіння</a></li>
-                        </ul>
-                      </li>
-                    <li class="header__nav__item"><a href="#contacts">Контакти</a></li>
-                    <li class="header__nav__item"><a href="#map">Наші магазини</a></li>
-                    <li class="header__nav__item"><a href="#discussing">Обговорення</a></li> 
-                    <li class="header__nav__item"><a href="#">Пошук</a></li>
-                </ul>
-            </nav>
-            <a href="#"><img src="icons/basket.png" alt="basket" id="basket"></a>
-            <div class="header__language">
-                <a href="#"><img src="icons/Flag_of_Ukraine.png" alt="ukraine" class="header__language-img"></a>
-                <a href="#"><img src="icons/Flag_of_Slovakia1.png" alt="slovakia" class="header__language-img"></a>
-                <a href="#"><img src="icons/Flag_of_the_United_Kingdom.png" alt="english" class="header__language-img"></a>
-            </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </header>
+        <img src="img/logo.png" alt="logo.png" class="phone-logo">
+          <div class="container">
+              <div class="header__wrapper">
+                <div class="header__logo">  
+                  <a href="/index.html"><img src="img/logo.png" alt="logohandwithtree" class="header__logo-img"></a>
+              <h2 class="header__logo-title">Технології
+                <br>
+                  органічного<br>
+                  землеробства</h2>
+              </div>
+              <nav class="header__nav header__nav__active">
+                  <ul class="header__nav__list">
+  
+                      <li class="header__nav__item__dropdown">
+                          <button class="header__nav__item header__nav__item__dropdown__dropbtn">Клуб<span>&#9660;</span>
+                          </button>
+                          <ul class="header__nav__item__dropdown__dropdown-content">
+                            <li><a href="#tasks">Призначення клубу</a></li>
+                            <li><a href="#tasks">Завдання клубу</a></li>
+                            <li><a href="#tasks">Діяльність клубу</a></li>
+                            <li><a href="/technology.html" target="_blank">Технології органічного землеробства</a></li>
+                          </ul>
+                        </li>
+                       <li class="header__nav__item__dropdown">
+                          <button class="header__nav__item header__nav__item__dropdown__dropbtn">Крамниця <span>&#9660;</span>
+                          </button>
+                          <ul class="header__nav__item__dropdown__dropdown-content">
+                            <li data-products-type="seedlings"><a href="#shop">Саджанці</a></li>
+                            <li data-products-type="sprouts"><a href="#shop">Розсади</a></li>
+                            <li data-products-type="seed"><a href="#shop">Насіння</a></li>
+                          </ul>
+                        </li>
+                      
+                        <li class="header__nav__item__dropdown header__nav__another">
+                          <button class="header__nav__item header__nav__item__dropdown__dropbtn">Інше<span>&#9660;</span>
+                          </button>
+                          <ul class="header__nav__item__dropdown__dropdown-content">
+                            <li><a href="#contacts">Контакти</a></li>
+                            <li><a href="#map">Наші магазини</a></li>
+                            <li><a href="#discussing">Обговорення</a></li> 
+                          </ul>
+                        </li>
+                      <li class="header__nav__item__dropdown header__nav__item__language">
+                          <button class="header__nav__item header__nav__item__dropdown__dropbtn">Мова <span>&#9660;</span>
+                          </button>
+                          <ul class="header__nav__item__dropdown__dropdown-content">
+                            <li><a href="#"><img src="icons/Flag_of_Ukraine.png" alt="ukraine" class="header__language-img"></a></li>
+                            <li><a href="#"><img src="icons/Flag_of_Slovakia1.png" alt="slovakia" class="header__language-img"></a></li>
+                            <li><a href="#"><img src="icons/Flag_of_the_United_Kingdom.png" alt="english" class="header__language-img"></a></li>
+                          </ul>
+                        </li>
+  
+                      <li class="header__nav__item"><a href="#contacts">Контакти</a></li>
+                      <li class="header__nav__item"><a href="#map">Наші магазини</a></li>
+                      <li class="header__nav__item"><a href="#discussing">Обговорення</a></li> 
+                  </ul>
+              </nav>
+              <a><img src="icons/basket.png" alt="basket" id="basket"></a>
+              <div class="header__language">
+                  <a href="#"><img src="icons/Flag_of_Ukraine.png" alt="ukraine" class="header__language-img"></a>
+                  <a href="#"><img src="icons/Flag_of_Slovakia1.png" alt="slovakia" class="header__language-img"></a>
+                  <a href="#"><img src="icons/Flag_of_the_United_Kingdom.png" alt="english" class="header__language-img"></a>
+              </div>
+              <span class="header__close">&#9658;</span>
+              </div>
+          </div>
+      </header>
     <section class="technology">
         <div class="container">
            <aside>

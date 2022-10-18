@@ -1,5 +1,6 @@
 .technology{
     background:#f5f5f6;
+    padding-top: 60px;
     .container{
         display: flex;
     }
@@ -44,6 +45,7 @@
     article{
         background: $medium-color;
         padding: 15px;
+        width: 100%;
         h1{
             font-size: 48px;
             text-align: center;
@@ -61,7 +63,7 @@
         }
         img{
             display: block;
-            max-width: 900px;
+            max-width: 100%;
             margin: 0 auto;
             transition: 124ms linear;
             &:hover{

@@ -1,3 +1,4 @@
+@import 'base/simple.scss';
 @import 'base/variables';
 @import 'base/mixins';
 
@@ -7,15 +8,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --app-height: 100%;
+ }
 html {
     scroll-behavior: smooth;
 }
 .container{
     max-width: 1200px;
     margin: 0 auto;
-}
-body{
-    padding-top: 80px;
 }
 @import 'blocks/header';
 @import 'blocks/title';
@@ -26,6 +27,9 @@ body{
 @import 'blocks/about';
 @import 'blocks/contacts';
 @import 'blocks/button';
+@import 'blocks/cart';
 @import 'blocks/modal';
 @import 'blocks/shop';
-@import 'blocks/cart';
+@import 'blocks/pageup';
+@import 'blocks/media';
+@import 'blocks/hamburger';
